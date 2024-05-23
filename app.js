@@ -1,9 +1,9 @@
 $(function(){
-  $('.box1').slideDown(function (){
-    $('.box1').css({
-      'background-color': '#0000FF',
-      'width': '200px',
-      'height': '100px'
-    }).slideUp();
+  $('.box1').on('click',function(){
+    $('.box1').addClass('box-ect');
+  });
+  
+  $('.box1').mouseout(function(){
+    $('.box1').removeClass('box-ect');
   });
 });
